@@ -18,4 +18,16 @@ Each project has a detailed report as a PDF file and a main function that solves
    - Computing survival probability and intensity realted to an obligor without taking into account the accrual term, with the accrual term and using Jarrow-Turnbull approximation.
    - Pricing of a First-to-Default
 
-### 4. 
+### 4. Structured Products
+   - Certificate pricing (i.e. computation of the participation coefficient) given the hedging termsheet. <br>
+   - Comparison of the Digital option pricing with Black model and with the implied volatility curve. <br>
+   - European Call option pricing according to a normal mean-variance mixture using Lewis formula combined with: FFT, Quadrature approximation for the numerical intergration, Monte Carlo. <br>
+   - Calibration of a normal mean-variance mixture using S&P500 volatility surface via a global calibration with constant weights.
+
+### 5. Structured Bond pricing and hedging
+   - Bootstrap for the market discount factors's curve. <br>
+   - Structured bond pricing (i.e. computation of the upfront) <br>
+   - Computation of some risk measures: Delta-bucket sensitivites, total Vega, Vega-bucket sensitivities.
+   - Hedging of the Delta risk with swaps. <br>
+   - Hedging of the Vega risk with ATM 5 years swap. <br>
+   - Hedging of the bucketed-Vega risk with a 5 years Cap and a 15 years Cap.
