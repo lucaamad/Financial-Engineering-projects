@@ -1,0 +1,66 @@
+function [business]=businessdates(dates,direction,country)
+
+% Return the date if the date is business or the first business date after
+% the date if it isn't
+
+% INPUT:
+% dates: dates to check
+% direction: follow or previous
+% country: selection of hollidays
+
+% The standard is Europe
+if nargin<3
+    country=1;
+end
+
+% The standard is follow
+if nargin<2
+    direction='follow';
+end
+
+% Compute the years we are considering
+y=unique(year(dates));
+
+% Make year a row vector
+if iscolumn(y)
+    y=y';
+end
+
+% Select convention (so far only Europe)
+switch (country)
+    case 1 %Europe
+    
+    % Select dates of New Year's Day, International Workers Day, Christmas
+    % (gregorian calendar), Boxing day
+    newyear=datetime(y,1,1);
+    workers=datetime(y,5,1);
+    xmas=datetime(y,12,25);
+    boxing=datetime(y,12,26);
+
+    % Select dates of easter (by GitHub, Cardillo G. (2007). Easter: an 
+    % Easter Day calculator based on the Gauss algorithm).
+    easters=datetime(easter(y,verbose=0),'ConvertFrom','datenum');
+    
+    % Select dates of Good Friday and Easter Monday
+    g_friday=easters-caldays(2);
+    e_monday=easters+caldays(1);
+    
+    % Put together hollidays
+    holly=[newyear, workers, xmas, boxing, g_friday, e_monday];    
+end
+
+% Check that the dates are not holidays.
+% Function "busdate" checks that the following day is not a holiday, hence
+% we apply it to the preceeding days of the vector "date_floating", or
+% following if the direction is previous
+if strcmp(direction,'follow')
+    business=busdate(dates-1,direction,holly);
+    business=datenum(business);
+elseif strcmp(direction,'previous')
+    business=busdate(dates+1,direction,holly);
+    business=datenum(business);
+else
+    error("The selected direction doesn't exist")
+end
+
+end % function businessdates
