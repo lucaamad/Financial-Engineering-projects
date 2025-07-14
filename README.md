@@ -14,9 +14,9 @@ Each project has a detailed report and a main function that solves the tasks by 
    - Computation of DV01-parallel shift, DV01<sup>(z)</sup>-parallel shift, Basis Point Value for a plain vanilla Interest Rate swap vs Euribor and Macaulay Duration for an "Interbank Coupon Bond".
 
 ### 3. CDS and First-to-Default
-   - Building a complete set of CDS spreads using bootstrap
+   - Building a complete set of CDS spreads using bootstrap.
    - Computing survival probability and intensity realted to an obligor without taking into account the accrual term, with the accrual term and using Jarrow-Turnbull approximation.
-   - Pricing of a First-to-Default
+   - Pricing of a First-to-Default.
 
 ### 4. Structured Products
    - Certificate pricing (i.e. computation of the participation coefficient) given the hedging termsheet. <br>
@@ -26,7 +26,7 @@ Each project has a detailed report and a main function that solves the tasks by 
 
 ### 5. Structured Bond pricing and hedging
    - Bootstrap for the market discount factors's curve. <br>
-   - Structured bond pricing (i.e. computation of the upfront) <br>
+   - Structured bond pricing (i.e. computation of the upfront). <br>
    - Computation of some risk measures: Delta-bucket sensitivites, total Vega, Vega-bucket sensitivities.
    - Hedging of the Delta risk with swaps. <br>
    - Hedging of the Vega risk with ATM 5 years swap. <br>
