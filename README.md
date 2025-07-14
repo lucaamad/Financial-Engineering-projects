@@ -1,6 +1,6 @@
 # Financial-Engineering-projects
-A collection of 8 MATLAB codes developed for my Financial Engineering course, done in collaboration with my colleagues Nicola Baldoni, Marco Barbero and Greta Belgeri. <br> 
-Each project has a detailed report as a PDF file and a main function that solves the tasks by calling tha auxiliary functions contained in the project folder. When needed, also the dataset is provided as an Excel/CSV file.
+A collection of 8 MATLAB projects developed for my Financial Engineering course, done in collaboration with my colleagues Nicola Baldoni, Marco Barbero and Greta Belgeri. <br> 
+Each project has a detailed report and a main function that solves the tasks by calling tha auxiliary functions contained in the project folder. When needed, the dataset is provided as an Excel/CSV file.
 
 ## Overview of the projects:
 
@@ -31,3 +31,18 @@ Each project has a detailed report as a PDF file and a main function that solves
    - Hedging of the Delta risk with swaps. <br>
    - Hedging of the Vega risk with ATM 5 years swap. <br>
    - Hedging of the bucketed-Vega risk with a 5 years Cap and a 15 years Cap.
+
+### 6. Structured Products 2
+   - Computation of the upfront of the hedging swap of an interest rate structured product using NIG model and Black model. <br>
+   - Bermudan yearly Payer Swaption pricing with Hull-White model, using trinomial tree. <br>
+   - Check of the correct implementation of the tree using an approach based on Jamshidian formula. <br>
+   - Estimation of upper and lower bound for the price of the Bermudan yearly Payer Swaption.
+
+### 7. Risk Management: Fixed Rate Bonds
+   - Derivation of the hazard rate curves for Investment-Grade and High-Yield bond issuers. <br>
+   - Computation of the Z-spread of a set of fixed rate bonds. <br>
+   - Derivation of the market-implied rating transition matrix.
+
+### 8. Risk Management: Credit Portfolio Risk
+   - Computation of the Present Value in a years' time of an Investment-Grade fixed rate bond according to the CreditMetrics approach. <br>
+   - Computation of the 1 year 99.9% VaR of a portolio composed by fixed rate bonds using different values of correlation between the issuers.
