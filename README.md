@@ -1,36 +1,36 @@
 # Financial-Engineering-projects
-A collection of 8 MATLAB projects developed for my Financial Engineering course, done in collaboration with my colleagues Nicola Baldoni, Marco Barbero and Greta Belgeri. <br> 
-Each project includes a detailed report and a main function that solves the assigned tasks by calling auxiliary functions contained in the project folder. When necessary, datasets are provided as an Excel/CSV file.
+A collection of 8 MATLAB projects developed for my Financial Engineering course, carried out in collaboration with my colleagues Nicola Baldoni, Marco Barbero and Greta Belgeri. <br> 
+Each project includes a detailed report and a main function that solves the assigned tasks by calling auxiliary functions contained in the project folder. When necessary, datasets are provided as Excel files.
 
 ## Overview of the projects:
 
 ### 1. Pricing
-   - Pricing of an European Call option using Black&Scholes formula, CRR tree, Monte-Carlo simulation and antithetic variables technique. <br> 
-   - Pricing of an European Call option with European up&in barrier using closed formula, CRR     tree and Monte Carlo simulation. <br>
+   - Pricing of a European Call option using Black&Scholes formula, CRR tree, Monte-Carlo simulation and the antithetic variables technique. <br> 
+   - Pricing of a European Call option with European up&in barrier using closed-form formula, CRR tree and Monte Carlo simulation. <br>
    - Pricing of a Bermudan Call option using CRR tree.
 
 ### 2. Bootstrap and interest rate sensitivities
-   - Boostrap of the discount factors' curve using a single-curve model based on the interbank    market data as of February 15th, 2008 at 10:45 CET. <br>
-   - Computation of DV01-parallel shift, DV01<sup>(z)</sup>-parallel shift, Basis Point Value for a plain vanilla Interest Rate swap vs Euribor and Macaulay Duration for an "Interbank Coupon Bond".
+   - Bootstrap of the discount factors curve using a single-curve model based on the interbank market data as of February 15th, 2008 at 10:45 CET. <br>
+   - Computation of DV01-parallel shift, DV01<sup>(z)</sup>-parallel shift, Basis Point Value for a plain vanilla Interest Rate swap vs Euribor and Macaulay duration for an "Interbank Coupon Bond".
 
 ### 3. CDS and First-to-Default
-   - Construction of a complete set of CDS spreads using bootstrap.
+   - Construction of a complete set of CDS spreads using bootstrapping.
    - Computation of survival probabilities and default intensities for an obligor without taking into account the accrual term, with the accrual term and using Jarrow-Turnbull approximation.
    - Pricing of a First-to-Default.
 
 ### 4. Structured Products
    - Certificate pricing (i.e. computation of the participation coefficient) based on the hedging term sheet. <br>
    - Comparison of Digital option pricing using the Black model and the implied volatility curve. <br>
-   - European Call option pricing under a normal mean-variance mixture model using Lewis formula combined with: FFT, quadrature approximation for numerical intergration, Monte Carlo simulation. <br>
-   - Calibration of a normal mean-variance mixture model using S&P500 volatility surface via global calibration with constant weights.
+   - European Call option pricing under a normal mean-variance mixture model using Lewis formula combined with: FFT, quadrature approximation for numerical integration, Monte Carlo simulation. <br>
+   - Calibration of a normal mean-variance mixture model using S&P 500 volatility surface via global calibration with constant weights.
 
 ### 5. Structured Bond pricing and hedging
    - Bootstrap of the market discount factors' curve. <br>
    - Structured bond pricing (i.e. computation of the upfront payment). <br>
-   - Computation of risk measures: Delta bucket sensitivites, total Vega, Vega bucket sensitivities.
+   - Computation of risk measures: Delta bucket sensitivities, total Vega, Vega bucket sensitivities.
    - Hedging Delta risk with swaps. <br>
    - Hedging Vega risk with an ATM 5-years swap. <br>
-   - Hedging bucketed Vega risk with a 5-years Cap and a 15-years Cap.
+   - Hedging bucketed Vega risk with a 5-year Cap and a 15-year Cap.
 
 ### 6. Structured Products 2
    - Computation of the upfront payment for the hedging swap of an interest rate structured product using NIG model and Black model. <br>
@@ -45,4 +45,4 @@ Each project includes a detailed report and a main function that solves the assi
 
 ### 8. Risk Management: Credit Portfolio Risk
    - Computation of the Present Value in a years' time of an Investment-Grade fixed rate bond according to the CreditMetrics approach. <br>
-   - Computation of the 1 year 99.9% VaR for a portolio of fixed rate bonds under different issuer correlation assumptions.
+   - Computation of the 1-year 99.9% VaR for a portfolio of fixed rate bonds under different issuer correlation assumptions.
