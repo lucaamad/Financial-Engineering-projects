@@ -32,7 +32,7 @@ Each project includes a detailed report and a main function that solves the assi
    - Hedging Vega risk with an ATM 5-years swap. <br>
    - Hedging bucketed Vega risk with a 5-years Cap and a 15-years Cap.
 
-### 6. Structured Products II
+### 6. Structured Products 2
    - Computation of the upfront payment for the hedging swap of an interest rate structured product using NIG model and Black model. <br>
    - Bermudan yearly Payer Swaption pricing using Hull-White model and a trinomial tree. <br>
    - Validation of the tree implementation using an approach based on Jamshidian formula. <br>
